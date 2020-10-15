@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { View, Text, Image, ScrollView, TextInput } from 'react-native';
 
 import './index.css';
 import * as serviceWorker from './serviceWorker';
