@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/undangan-react/precache-manifest.8c1841cb3030baf6172466b0491dd1fe.js"
+  "/undangan-react/precache-manifest.555767a18a504f09ff96415f365c6d6b.js"
 );
 
 self.addEventListener('message', (event) => {
