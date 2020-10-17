@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap');
+$background: rgb(116, 150, 132);
+$accent: rgb(116, 150, 132);
+$otherAccent:black;
+$darkBackground: #5b5f97;
+
+ .lokasi{
+     margin-top: 40px;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+
+#login-container {
+    
+  height: 450px;
+//   width: 100vw;
+  padding: 20px;
+  border-radius: 25px;
+  background: $background;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  .profile-img {
+    height: 40vh;
+    width: 80vw;
+    background: url(../../../assets/img/2an.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -80px;
+    left: auto;
+   // border-radius: 50%;
+    // box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+  h1 {
+    font-family: 'Sriracha', arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $otherAccent;
+  }
+  .description{
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 80%;
+    // height: 80vh;
+    font-size: 2rem;
+    margin: 10px 10% 0 10%;
+    color: $background;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: linear-gradient(45deg, $accent, $otherAccent, $otherAccent, $accent);
+    background-size: 300% 300%;
+    outline: none;
+    transition: all 200ms ease-in-out;
+    &:hover{
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      transform: translateY(2px);
+      -webkit-animation: gradientBG 1.5s ease-in-out forwards;
+      animation: gradientBG 1.5s ease-in-out forwards;
+      cursor: pointer;
+    }
+    &:active {
+      box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+      transform: translateY(4px);
+    }
+  }
+  
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+  // 100% {
+  //   background-position: 0% 50%;
+  // }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+  // 100% {
+  //   background-position: 0% 50%;
+  // }
+}

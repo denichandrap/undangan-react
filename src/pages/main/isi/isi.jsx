@@ -8,7 +8,7 @@ const Isi = () => {
 
 
     return <React.Fragment>
-        <DateCountdown dateTo='October 31, 2020 11:00:00 GMT+07:00' callback={() => alert('Hello')} />;
+        <DateCountdown dateTo='October 31, 2020 11:00:00 GMT+07:00' callback={() => alert('Hello')} />
 
 
   </React.Fragment>

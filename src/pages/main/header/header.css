@@ -1,28 +1,39 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-/* body {
-  margin:0;
-}
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
+
+.for-h1 {
+  font-family: 'SweetsDelight', sans-serif;
+  font-weight:500;
+  color:rgb(116, 150, 132);
+  text-shadow: 2px 2px 30px black;
+  /* letter-spacing: 2px; */
   font-size:48px;
 }
-p {
-  font-family: 'Lato', sans-serif;
+.for-p {
+  font-family: 'Mogalaris', sans-serif;
   letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
-} */
+  /* font-size:14px; */
+  color: rgb(116, 150, 132);
+  font-weight: 300;
+  text-shadow: 1px 1px 10px black;
+  /* color: white; */
+}
 
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: rgb(82, 134, 112);
+  /* background: rgb(103, 156, 136); */
+  background-image: url('../../../assets/img/test1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
   color:white;
+  
 }
+
+
 .logo {
   width:50px;
   fill:white;
@@ -36,13 +47,15 @@ p {
   width:100%;
   margin: 0;
   padding: 0;
+  bottom: 0;
 }
 
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
+  
 }
 
 .waves {
@@ -58,7 +71,7 @@ p {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
+  /* background-color:  */
 }
 
 /* Animation */
@@ -93,14 +106,14 @@ p {
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
+    height:50px;
     min-height:40px;
   }
   .content {
     height:30vh;
   }
   h1 {
-    font-size:24px;
+    /* font-size:30px; */
   }
 }
 

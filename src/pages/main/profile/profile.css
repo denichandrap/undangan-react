@@ -1,0 +1,128 @@
+
+.profile-card{
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.card {
+  background: rgb(116, 150, 132);
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card svg {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  /* background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); */
+  background-image: url(../../../assets/img/ima.png);
+  background-color: rgb(82, 134, 112);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 15px;
+  left: 85px;
+}
+
+.img-avatar2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  /* background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); */
+  background-image: url(../../../assets/img/dcp.png);
+  background-color: rgb(82, 134, 112);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 15px;
+  left: 85px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+/* path {
+  fill: white;
+} */
+
+.img-portada {
+  width: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url(../../../assets/img/gusti.png);
+  background-position: top center;
+  background-size: cover;
+}
+
+.portada2 {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url(../../../assets/img/deni.png);
+  background-position: top left;
+  background-size: cover;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  transition:.5s;
+  /* &:hover{
+    color: #4CAF50  ;
+    transform: rotate(22deg)
+  } */
+}
