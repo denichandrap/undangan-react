@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/undangan-react/static/css/main.b018cca0.chunk.css",
-    "main.js": "/undangan-react/static/js/main.d4446347.chunk.js",
-    "main.js.map": "/undangan-react/static/js/main.d4446347.chunk.js.map",
+    "main.css": "/undangan-react/static/css/main.ef77339c.chunk.css",
+    "main.js": "/undangan-react/static/js/main.ab623636.chunk.js",
+    "main.js.map": "/undangan-react/static/js/main.ab623636.chunk.js.map",
     "runtime-main.js": "/undangan-react/static/js/runtime-main.4f05fc04.js",
     "runtime-main.js.map": "/undangan-react/static/js/runtime-main.4f05fc04.js.map",
     "static/css/2.2a86faee.chunk.css": "/undangan-react/static/css/2.2a86faee.chunk.css",
-    "static/js/2.4b0cacfc.chunk.js": "/undangan-react/static/js/2.4b0cacfc.chunk.js",
-    "static/js/2.4b0cacfc.chunk.js.map": "/undangan-react/static/js/2.4b0cacfc.chunk.js.map",
+    "static/js/2.a26cd346.chunk.js": "/undangan-react/static/js/2.a26cd346.chunk.js",
+    "static/js/2.a26cd346.chunk.js.map": "/undangan-react/static/js/2.a26cd346.chunk.js.map",
     "index.html": "/undangan-react/index.html",
-    "precache-manifest.885c0223f41c7e41aa8639924ae6a4c0.js": "/undangan-react/precache-manifest.885c0223f41c7e41aa8639924ae6a4c0.js",
+    "precache-manifest.75b13ab9e70bdc010f7e79930dfbd383.js": "/undangan-react/precache-manifest.75b13ab9e70bdc010f7e79930dfbd383.js",
     "service-worker.js": "/undangan-react/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/undangan-react/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.b018cca0.chunk.css.map": "/undangan-react/static/css/main.b018cca0.chunk.css.map",
-    "static/js/2.4b0cacfc.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.4b0cacfc.chunk.js.LICENSE.txt",
+    "static/css/main.ef77339c.chunk.css.map": "/undangan-react/static/css/main.ef77339c.chunk.css.map",
+    "static/js/2.a26cd346.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.a26cd346.chunk.js.LICENSE.txt",
     "static/media/location.scss": "/undangan-react/static/media/2an.8fedcc3b.png",
     "static/media/index.css": "/undangan-react/static/media/SweetsDelight.8198e978.otf",
     "static/media/profile.css": "/undangan-react/static/media/ima.61dca883.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.4f05fc04.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.4b0cacfc.chunk.js",
-    "static/css/main.b018cca0.chunk.css",
-    "static/js/main.d4446347.chunk.js"
+    "static/js/2.a26cd346.chunk.js",
+    "static/css/main.ef77339c.chunk.css",
+    "static/js/main.ab623636.chunk.js"
   ]
 }
