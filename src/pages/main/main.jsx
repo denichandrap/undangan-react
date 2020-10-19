@@ -5,7 +5,6 @@ import Greetings from './greetings/greetings';
 import Profile from './profile/profile';
 import Location from './location/location';
 import Wishes from './wishes/wishes';
-import FileUpload from './wishes/fileupload';
 
 import './main.css';
 
@@ -21,7 +20,6 @@ function Main(){
         <Location/>
         {/* <Countdown/> */}
         <Countdown date={`2020-10-31T11:00:00`} />
-        {/* <FileUpload/> */}
         <Wishes/>
 
 
