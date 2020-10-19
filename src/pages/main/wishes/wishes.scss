@@ -1,0 +1,28 @@
+$background: rgb(116, 150, 132);
+.wishes{
+    margin-bottom:  calc(30vh/3);
+    padding-bottom: calc(30vh/3);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    background: $background;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.nuhun{
+    font-family: 'SweetsDelight','Mogalaris', sans-serif;
+    letter-spacing: 1px;
+     font-size:35px; 
+    color:black;
+    font-weight: 300;
+    text-shadow: 1px 1px 10px rgb(116, 150, 132);
+}
+.for-nama{
+    font-family: 'SweetsDelight', sans-serif;
+    font-weight:500;
+    color:black;
+    text-shadow: 2px 2px 30px rgb(116, 150, 132);
+    /* letter-spacing: 2px; */
+    font-size:48px;
+}

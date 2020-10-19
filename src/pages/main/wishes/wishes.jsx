@@ -1,18 +1,68 @@
 import React from "react";
 import camera from "../../../components/camera";
+import './wishes.scss';
+import axios from 'axios';
 
-const Wishes = () => {
+class Wishes extends React.Component {
+  
+
+  constructor() {
+    super();
+    this.state = {
+        selectedFile: '',
+    }
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+
+}
+
+
+handleInputChange(event) {
+    this.setState({
+        selectedFile: event.target.files[0],
+    })
+
+}
+
+
+submit() {
+    const data = new FormData();
+    data.append('file', this.state.selectedFile);
+    console.warn(this.state.selectedFile);
+    let url = "http://localhost:80/react/upload2.php";
+
+    axios.post(url, data, {}).then(res => {
+        console.warn(res);
+    })
+}
+render() {
   return (
     <React.Fragment>
-      <div class="lokasi">
-        <div id="login-container">
-          {/* <button onClick={() => camera.startCamera()}>Send A Wishes</button> */}
+      <div class="wishes">
+      {/* <form> */}
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
 
-          {/* <button onClick={() => camera.takeSnapshot()}>Send A Wishes2</button> */}
-        </div>
+  <label>
+    Message:
+    <input type="text" name="message" />
+  </label>
+  <input type="file" className="form-control" name="upload_file" onChange={this.handleInputChange} />
+  <button type="submit" className="btn btn-dark" onClick={() => this.submit()}>Save</button>
+{/* </form> */}
+        
       </div>
+
+      <div class="nuhun">
+        Thanks </div>
+
+        <div class='for-nama'>Gustiani & Deni</div>
+
+     
     </React.Fragment>
   );
-};
+}};
 
 export default Wishes;

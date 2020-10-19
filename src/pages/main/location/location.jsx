@@ -10,11 +10,7 @@ const Location = () => {
       <div class="lokasi">
         <div id="login-container">
           <div class="profile-img"></div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+      
           <h1>Save The Date</h1>
           <div class="description">
             Saturday, 31 October 2020
@@ -24,8 +20,12 @@ const Location = () => {
             Balai Gedung Atikah
             <br/>
             Jl. Cilisung No 237 Rt. 02 Rw. 14 Desa Sukamenak
-            Kecamatan Margahayu Kabupaten Bandung
+            Kecamatan Margahayu Kabupaten Bandung.
+            <br/>
+            <br/>
+   <h8>*Please Wear Your Mask.</h8>
           </div>
+        
           <a href='https://goo.gl/maps/sAMYB7y72YLUX5pN6' >
           <button >View Location</button></a>
           

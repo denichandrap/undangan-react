@@ -32,8 +32,8 @@ export default class Routes extends Component {
                 >
                   <Switch location={location}>
                     <Route exact path="/undangan-react/" component={Splash} />
-                    <Route exact path="/Main" component={Main} />
-                    <Route exact path="/App" component={App} />
+                    <Route exact path="/undangan-react/Main" component={Main} />
+                    <Route exact path="/undangan-react/App" component={App} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

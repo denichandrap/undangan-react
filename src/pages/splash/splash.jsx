@@ -113,7 +113,7 @@ function Splash() {
         <p>The Wedding Celebration of</p>
         <h1>Ima & Deni</h1></div>
         {/* <img src={logo} className="Splash-logo" alt="logo" /> */}
-        <Button variant="btn btn-success" onClick={() => history.push('/Main')}>navigate to page</Button>
+        <Button variant="btn btn-success" onClick={() => history.push('/undangan-react/Main')}>navigate to page</Button>
       </header>
         {/* </div> */}
       </HomePageElm>
