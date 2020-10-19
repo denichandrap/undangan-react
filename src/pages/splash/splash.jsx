@@ -65,16 +65,9 @@ const Page = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+ 
   text-align: center;
-  h2 {
-    color: #0d47a1;
-  }
-  p {
-    font-size: 1rem;
-    max-width: 400px;
-    margin: 20px auto;
-    color: #37474f;
-  }
+  
   a {
     text-decoration: none;
     color: #fff;
@@ -89,9 +82,6 @@ const Page = styled.div`
     );
   }
 
-  img {
-    border-radius: 50%;
-  }
 `;
 
 const HomePageElm = styled(Page)`

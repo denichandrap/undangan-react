@@ -14,14 +14,21 @@
 }
 
 .Splash-header {
+  max-width: 768px;
+  margin: 0 auto;
   background-color: #282c34;
+  background-image: url('../../assets/img/head.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(59, 90, 70);
 }
 
 .Splash-link {

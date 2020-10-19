@@ -1,8 +1,6 @@
 import React from "react";
 import "./location.scss";
 
-import { Button, Card } from "react-bootstrap";
-
 const Location = () => {
 
   return (
@@ -13,7 +11,7 @@ const Location = () => {
       
           <h1>Save The Date</h1>
           <div class="description">
-            Saturday, 31 October 2020
+            Saturday, October 31, 2020
             <br/>
             11.00 - 15.00 
             <br/>

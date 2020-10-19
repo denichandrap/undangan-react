@@ -29,7 +29,7 @@ submit() {
     const data = new FormData();
     data.append('file', this.state.selectedFile);
     console.warn(this.state.selectedFile);
-    let url = "http://localhost:80/react/upload2.php";
+    let url = "https://react-undagan.skypieateknik.co.id/upload.php";
 
     axios.post(url, data, {}).then(res => {
         console.warn(res);

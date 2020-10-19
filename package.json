@@ -34,6 +34,7 @@
     "eject": "react-scripts eject",
     "git-push": "git push origin master",
     "git-add-all": "git add .",
+    "git-pull": "git pull origin master",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

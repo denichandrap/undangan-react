@@ -5,7 +5,7 @@ import App from '../App';
 import history from './history';
 import Main from '../pages/main/main';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const PageContainer = styled.div`
