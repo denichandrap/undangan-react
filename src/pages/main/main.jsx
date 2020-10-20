@@ -7,6 +7,7 @@ import Location from './location/location';
 import Wishes from './wishes/wishes';
 
 import './main.css';
+import Timeline from './timeline/timeline';
 
 
 
@@ -21,6 +22,7 @@ function Main(){
         {/* <Countdown/> */}
         <Countdown date={`2020-10-31T11:00:00`} />
         <Wishes/>
+        <Timeline/>
 
 
         </div>

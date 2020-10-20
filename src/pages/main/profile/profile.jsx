@@ -20,7 +20,7 @@ const Profile = () => {
             <div class="title">The Bride</div>
             <h2>Gustiani Hikmattun Nafisah</h2>
 
-            <div class="desc">The Daughter of <br /><br /> Mr. Eden Sukayat <br />&<br /> Mrs. Kiki Marsiah</div>
+            <div class="desc">The Daughter of <br /> Mr. Eden Sukayat <br />&<br /> Mrs. Kiki Maskiah</div>
             <div class="actions">
             <div></div>
               <a href="https://www.instagram.com/gustianihikma/">
@@ -44,7 +44,7 @@ const Profile = () => {
             <div class="title">The Groom</div>
             <h2>Deni Chandra Pamungkas</h2>
 
-            <div class="desc">The Daughter of <br /><br /> Mr. Udin Haryadin <br />&<br /> Mrs. Aisyah</div>
+            <div class="desc">The Daughter of <br /> Mr. Udin Haryadin <br />&<br /> Mrs. Aisyah</div>
             <div class="actions">
               <div></div>
               <a href="https://www.instagram.com/denichandrap/"><img src={IG} alt="" class="icon-button" style={{width:'30px'}} /></a>
