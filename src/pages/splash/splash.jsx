@@ -70,7 +70,7 @@ const Page = styled.div`
   
   a {
     text-decoration: none;
-    color: #fff;
+  
     padding: 10px 20px;
     border: 1px solid #4776e6;
     border-radius: 5px;
@@ -98,12 +98,12 @@ function Splash() {
     <HomePageElm>
     {/* <div className="Splash"> */}
       <header className="Splash-header">
-        <div>
-        <h2>You’re Invited!</h2>
-        <p>The Wedding Celebration of</p>
-        <h1>Ima & Deni</h1></div>
+        <div className="untuktext">
+        <h2 className="for-p-2">You’re Invited!</h2>
+        <p className="for-p-2">The Wedding Celebration of</p>
+        <h1 className="for-h1-2">Ima & Deni</h1></div>
         {/* <img src={logo} className="Splash-logo" alt="logo" /> */}
-        <Button variant="btn btn-success" onClick={() => history.push('/undangan-react/Main')}>navigate to page</Button>
+        <Button variant="btn btn-success navigasi" onClick={() => history.push('/undangan-react/Main')}>Open Invitation</Button>
       </header>
         {/* </div> */}
       </HomePageElm>

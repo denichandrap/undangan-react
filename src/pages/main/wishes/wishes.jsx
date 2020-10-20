@@ -117,7 +117,7 @@ class Wishes extends React.Component {
           {/* </form> */}
 
           <div class="form-style-5">
-            <form>
+            {/* <form> */}
               <fieldset>
                 <h1>Send Wishes</h1>
                 <legend><span class="number">1</span> Write a message for us…</legend>
@@ -132,8 +132,8 @@ class Wishes extends React.Component {
               </fieldset>
               {uploadPercentage > 0 && <ProgressBar now={uploadPercentage} label={`${uploadPercentage}%`} />}
               <br />
-              <input type="submit" value="Apply" />
-            </form>
+              <input type="submit" value="Apply"  onClick={() => this.submit()} />
+            {/* </form> */}
           </div>
         </div>
 

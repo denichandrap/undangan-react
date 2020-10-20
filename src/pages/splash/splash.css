@@ -1,5 +1,39 @@
 .Splash {
   text-align: center;
+  
+}
+.untuktext{
+  color: #fff;
+}
+.navigasi{
+  font-family: 'Mogalaris', sans-serif;
+  letter-spacing: 1px;
+  font-size:25px;
+  color:#fff;
+  font-weight: 300;
+  text-shadow: 1px 1px 10px black;
+  width: 35vw;
+  /* color: white; */
+}
+
+.for-h1-2 {
+  font-family: 'SweetsDelight', sans-serif;
+  font-weight:500;
+  color:#fff;
+  /* rgb(116, 150, 132); */
+  text-shadow: 2px 2px 30px black;
+  /* letter-spacing: 2px; */
+  font-size:48px;
+}
+.for-p-2 {
+  font-family: 'Mogalaris', sans-serif;
+  letter-spacing: 1px;
+  /* font-size:14px; */
+  color: #fff;
+  /* rgb(116, 150, 132); */
+  font-weight: 300;
+  text-shadow: 1px 1px 10px black;
+  /* color: white; */
 }
 
 .Splash-logo {
@@ -16,7 +50,7 @@
 .Splash-header {
   max-width: 768px;
   margin: 0 auto;
-  background-color: #282c34;
+  /* background-color: #282c34; */
   background-image: url('../../assets/img/head.png');
   background-repeat: no-repeat;
   background-position:center;
@@ -28,11 +62,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(59, 90, 70);
+  /* color: rgb(59, 90, 70); */
 }
 
 .Splash-link {
-  color: #61dafb;
+  /* color: #61dafb; */
 }
 
 
