@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "948aaf8563aa71e77f98336d2a1f9a7d",
+    "revision": "f6cd3cd0f497077bd220c6a7a455322e",
     "url": "/undangan-react/index.html"
   },
   {
-    "revision": "3080c9bbb36d2cc708e6",
-    "url": "/undangan-react/static/css/2.2a86faee.chunk.css"
+    "revision": "a00ada2dc1eabd1d756d",
+    "url": "/undangan-react/static/css/2.e5d0dddf.chunk.css"
   },
   {
-    "revision": "1fc468e668e3678919ee",
-    "url": "/undangan-react/static/css/main.ef77339c.chunk.css"
+    "revision": "9a526b22e96542102dc0",
+    "url": "/undangan-react/static/css/main.c2260718.chunk.css"
   },
   {
-    "revision": "3080c9bbb36d2cc708e6",
-    "url": "/undangan-react/static/js/2.a26cd346.chunk.js"
+    "revision": "a00ada2dc1eabd1d756d",
+    "url": "/undangan-react/static/js/2.34b1af16.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/undangan-react/static/js/2.a26cd346.chunk.js.LICENSE.txt"
+    "url": "/undangan-react/static/js/2.34b1af16.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1fc468e668e3678919ee",
-    "url": "/undangan-react/static/js/main.ab623636.chunk.js"
+    "revision": "9a526b22e96542102dc0",
+    "url": "/undangan-react/static/js/main.c568e81a.chunk.js"
   },
   {
     "revision": "5bc6f84bc2edea8eae8b",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b473f9790f9c5b8273f48a80f53119de",
     "url": "/undangan-react/static/media/deni.b473f979.png"
+  },
+  {
+    "revision": "82d9b86b01560ce17d310f3fd2a79ca9",
+    "url": "/undangan-react/static/media/file.82d9b86b.mp4"
   },
   {
     "revision": "39b3eafca1c57a56ddfcc9db584324e6",
@@ -70,5 +74,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e95efabba5425a62ade96444cda8495",
     "url": "/undangan-react/static/media/test1.0e95efab.jpg"
+  },
+  {
+    "revision": "7c37d239c9d9f3e51d47094ee7558fd0",
+    "url": "/undangan-react/static/media/yac.7c37d239.jpg"
   }
 ]);
