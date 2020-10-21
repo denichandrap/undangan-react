@@ -58,9 +58,9 @@ class Wishes extends React.Component {
       }
     }
 
-    // let url = "https://react-undagan.skypieateknik.co.id/upload.php";
+     let url = "https://react-undagan.skypieateknik.co.id/upload.php";
     // let url = "http://192.168.100.100/react/upload.php";
-    let url = "http://192.168.11.89/react/upload.php";
+   // let url = "http://192.168.11.89/react/upload.php";
     //TODO: pengunaan option pada sebelumnya gagal upload
 
     axios.post(url, data, {}).then(res => {
