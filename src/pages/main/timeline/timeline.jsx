@@ -50,9 +50,11 @@ class Timeline extends Component {
 
     getData(page) {
         this.setState({ loading: true });
+        let url = "https://react-undagan.skypieateknik.co.id/getdata.php?page=";
+       // let url = "http://192.168.11.89/react/getdata.php?page=";
         axios
             .get(
-                `http://192.168.11.89/react/getdata.php?page=${page}`
+                url+`${page}`
             )
             .then(res => {
                 console.log(res);
