@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/undangan-react/static/css/main.0f13e2dd.chunk.css",
-    "main.js": "/undangan-react/static/js/main.78de183d.chunk.js",
-    "main.js.map": "/undangan-react/static/js/main.78de183d.chunk.js.map",
+    "main.css": "/undangan-react/static/css/main.421075b3.chunk.css",
+    "main.js": "/undangan-react/static/js/main.36f8b787.chunk.js",
+    "main.js.map": "/undangan-react/static/js/main.36f8b787.chunk.js.map",
     "runtime-main.js": "/undangan-react/static/js/runtime-main.4f05fc04.js",
     "runtime-main.js.map": "/undangan-react/static/js/runtime-main.4f05fc04.js.map",
     "static/css/2.e5d0dddf.chunk.css": "/undangan-react/static/css/2.e5d0dddf.chunk.css",
-    "static/js/2.8352cf1d.chunk.js": "/undangan-react/static/js/2.8352cf1d.chunk.js",
-    "static/js/2.8352cf1d.chunk.js.map": "/undangan-react/static/js/2.8352cf1d.chunk.js.map",
+    "static/js/2.b1b6c6f4.chunk.js": "/undangan-react/static/js/2.b1b6c6f4.chunk.js",
+    "static/js/2.b1b6c6f4.chunk.js.map": "/undangan-react/static/js/2.b1b6c6f4.chunk.js.map",
     "index.html": "/undangan-react/index.html",
-    "precache-manifest.fc6169d3d0c52d4ba71f85a5eebb249c.js": "/undangan-react/precache-manifest.fc6169d3d0c52d4ba71f85a5eebb249c.js",
+    "precache-manifest.eb2f3798d85bc7e853c22ab147eaf4f4.js": "/undangan-react/precache-manifest.eb2f3798d85bc7e853c22ab147eaf4f4.js",
     "service-worker.js": "/undangan-react/service-worker.js",
     "static/css/2.e5d0dddf.chunk.css.map": "/undangan-react/static/css/2.e5d0dddf.chunk.css.map",
-    "static/css/main.0f13e2dd.chunk.css.map": "/undangan-react/static/css/main.0f13e2dd.chunk.css.map",
-    "static/js/2.8352cf1d.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.8352cf1d.chunk.js.LICENSE.txt",
+    "static/css/main.421075b3.chunk.css.map": "/undangan-react/static/css/main.421075b3.chunk.css.map",
+    "static/js/2.b1b6c6f4.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.b1b6c6f4.chunk.js.LICENSE.txt",
     "static/media/location.scss": "/undangan-react/static/media/2an.8fedcc3b.png",
     "static/media/index.css": "/undangan-react/static/media/SweetsDelight.8198e978.otf",
     "static/media/profile.css": "/undangan-react/static/media/ima.61dca883.png",
@@ -22,14 +22,13 @@
     "static/media/instagram.svg": "/undangan-react/static/media/instagram.b1c58ee1.svg",
     "static/media/logo.svg": "/undangan-react/static/media/logo.ee7cd8ed.svg",
     "static/media/rose.png": "/undangan-react/static/media/rose.e0971e34.png",
-    "static/media/header.css": "/undangan-react/static/media/test1.0e95efab.jpg",
-    "static/media/yac.jpg": "/undangan-react/static/media/yac.7c37d239.jpg"
+    "static/media/header.css": "/undangan-react/static/media/test1.0e95efab.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4f05fc04.js",
     "static/css/2.e5d0dddf.chunk.css",
-    "static/js/2.8352cf1d.chunk.js",
-    "static/css/main.0f13e2dd.chunk.css",
-    "static/js/main.78de183d.chunk.js"
+    "static/js/2.b1b6c6f4.chunk.js",
+    "static/css/main.421075b3.chunk.css",
+    "static/js/main.36f8b787.chunk.js"
   ]
 }
