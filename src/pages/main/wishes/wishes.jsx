@@ -7,7 +7,7 @@ class Wishes extends React.Component {
   constructor() {
     super();
     this.state = {
-      afterUpload: 'Klick Here to Upload',
+      // afterUpload: 'Klick Here to Upload',
       uploadPercentage: 0,
       selectedFile: "",
       name: "",
@@ -31,15 +31,18 @@ class Wishes extends React.Component {
   handleMsgChange(event) {
     this.setState({ msg: event.target.value });
   }
-
+  
   submit() {
     const data = new FormData();
     data.append("file", this.state.selectedFile);
     data.append("nama", this.state.name);
     data.append("msg", this.state.msg);
-    // console.warn(this.state.selectedFile);
-    // console.log(this.state.name);
-    // console.log(this.state.msg);
+    //  console.warn(this.state.selectedFile);
+    //  console.log(this.state.name);
+    //  console.log(this.state.msg);
+    //  console.log(this.state.selectedFile);
+
+   
 
 
     const options = {
@@ -55,18 +58,21 @@ class Wishes extends React.Component {
       }
     }
 
-    let url = "https://react-undagan.skypieateknik.co.id/upload.php";
+    // let url = "https://react-undagan.skypieateknik.co.id/upload.php";
     // let url = "http://192.168.100.100/react/upload.php";
+    let url = "http://192.168.11.89/react/upload.php";
+    //TODO: pengunaan option pada sebelumnya gagal upload
 
-    axios.post(url, data, options).then(res => {
-      console.log(res)
-      this.setState({ uploadPercentage: 100, afterUpload: 'Upload Berhasil Terima kasih' }, () => {
+    axios.post(url, data, {}).then(res => {
+      console.log(res);      
+      this.setState({ uploadPercentage: 100 }, () => {
+        
         setTimeout(() => {
           this.setState({ uploadPercentage: 0 })
         }, 1000);
       })
     })
-
+    // window.location.reload();
 
 
     // axios.post(url, data, {}).then(res => {
@@ -115,31 +121,30 @@ class Wishes extends React.Component {
             Submit
           </button> */}
           {/* </form> */}
-
+          <h1>Send Wishes</h1>
           <div class="form-style-5">
             {/* <form> */}
-              <fieldset>
-                <h1>Send Wishes</h1>
-                <legend><span class="number">1</span> Write a message for us…</legend>
-                <input type="text" name="name" placeholder="Your Name *" onChange={this.handleNameChange} />
-                <textarea name="msg" placeholder="Write a message for us" onChange={this.handleMsgChange}></textarea>
+            <fieldset>
+              
+              <legend><span class="number">1</span> Write a message for us…</legend>
+              <input type="text" name="name" placeholder="Your Name *" onChange={this.handleNameChange} />
+              <textarea name="msg" placeholder="Write a message for us" onChange={this.handleMsgChange}></textarea>
 
 
-              </fieldset>
-              <fieldset>
-                <legend><span class="number">2</span> you can upload your wishes video or image</legend>
-                <input type="file" name="upload_file" onChange={this.handleInputChange} />
-              </fieldset>
-              {uploadPercentage > 0 && <ProgressBar now={uploadPercentage} label={`${uploadPercentage}%`} />}
-              <br />
-              <input type="submit" value="Apply"  onClick={() => this.submit()} />
+            </fieldset>
+            <fieldset>
+              <legend><span class="number">2</span> you can upload your wishes video or image</legend>
+              <input type="file" name="upload_file" onChange={this.handleInputChange} />
+            </fieldset>
+            <fieldset>{uploadPercentage > 0 && <ProgressBar now={uploadPercentage} label={`${uploadPercentage}%`} />}</fieldset>
+
+            <br />
+            <input type="submit" value="Send" onClick={() => this.submit()} />
             {/* </form> */}
           </div>
         </div>
 
-        <div class="nuhun">Thanks </div>
-
-        <div class="for-nama">Gustiani & Deni</div>
+        
 
 
 

@@ -24,7 +24,9 @@ function Main(){
         <Wishes/>
         <Timeline/>
 
+        <div class="nuhun">Thanks </div>
 
+<div class="for-nama">Gustiani & Deni</div>
         </div>
   
     </React.Fragment>

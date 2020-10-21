@@ -5,126 +5,119 @@ import Gambar from '../../../assets/img/yac.jpg';
 import './timeline.scss';
 import ModalImage from "react-modal-image";
 import Video2 from '../../../assets/video/file.mp4';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import Scroll from './componenets/scroll';
+import axios from "axios";
 
 
 class Timeline extends Component {
 
+    constructor() {
+        super();
+        this.state = {
+            media: [],
+            loading: false,
+            page: 0,
+            prevY: 0
+        };
+    }
+    componentDidMount() {
+        this.getData(this.state.page);
 
+        var options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 1.0
+        };
 
-    // openModal(){
+        this.observer = new IntersectionObserver(
+            this.handleObserver.bind(this),
+            options
+        );
+        this.observer.observe(this.loadingRef);
+    }
 
-    // }
+    handleObserver(entities, observer) {
+        const y = entities[0].boundingClientRect.y;
+        if (this.state.prevY > y) {
+            const lastItem = this.state.media[this.state.media.length - 1];
+            const curPage = lastItem.id;
+            this.getData(curPage);
+            this.setState({ page: curPage });
+        }
+        this.setState({ prevY: y });
+    }
+
+    getData(page) {
+        this.setState({ loading: true });
+        axios
+            .get(
+                `http://192.168.11.89/react/getdata.php?page=${page}`
+            )
+            .then(res => {
+                console.log(res);
+                this.setState({ media: [...this.state.media, ...res.data] });
+                this.setState({ loading: false });
+            });
+    }
+    
 
 
     render() {
+        const loadingCSS = {
+            height: "100px",
+            margin: "30px"
+        };
+        const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
         return (
             <React.Fragment>
+
+                <br />
+                <h1>Timeline</h1>
                 <VerticalTimeline>
+                {this.state.media.map(result => (
+                    // <img src={user.filename} height="100px" width="200px" />
+                  
+
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        date="2011 - present"
+                        date={result.date}
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     // icon={<WorkIcon />}
                     >
-                        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                        <h3 className="vertical-timeline-element-title">{result.name}</h3>
+                        <br/>
                         <ModalImage
-                            small={Gambar}
-                            large={Gambar}
-                            alt="Hello World!"
+                            small={result.filename}
+                            large={result.filename}
+                           // alt=`From ${result.name} message : ${result.msg}`
                         />
-                        <p>
-                            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2010 - 2011"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Art Director</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                        {/* <video >   
-                            <source src={Video2} type="video/mp4" ></source>
-                        </video> */}
-
-<ReactPlayer playing url={{src:Video2}} />
-                        <p></p>
 
                         <p>
-                            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-    </p>
+                            {result.msg}
+                        </p>
                     </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2008 - 2010"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
+                    
+                ))}     
+                <div
+                        ref={loadingRef => (this.loadingRef = loadingRef)}
+                        style={loadingCSS}
                     >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                        <p>
-                            User Experience, Visual Design
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2006 - 2008"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                        <p>
-                            User Experience, Visual Design
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="April 2013"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                        <p>
-                            Strategy, Social Media
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="November 2012"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                        <p>
-                            Creative Direction, User Experience, Visual Design
-    </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                        <p>
-                            Creative Direction, Visual Design
-    </p>
-                    </VerticalTimelineElement>
+                        <span style={loadingTextCSS}>Loading...</span>
+                    </div>         
+                    
+
+
                     <VerticalTimelineElement
                         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    // icon={<StarIcon />}
+                    //  icon={<StarIcon />}
                     />
-                </VerticalTimeline>
+                    </VerticalTimeline>
 
+                
+                {/* <Scroll/> */}
 
             </React.Fragment>
 

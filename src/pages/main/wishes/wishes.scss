@@ -29,7 +29,7 @@ $background: rgb(116, 150, 132);
 
 
 .form-style-5{
-	max-width: 500px;
+	// max-width: 500px;
 	padding: 10px 20px;
 	background: #f4f7f8;
 	margin: 10px auto;
@@ -57,6 +57,7 @@ $background: rgb(116, 150, 132);
 .form-style-5 input[type="search"],
 .form-style-5 input[type="time"],
 .form-style-5 input[type="url"],
+.form-style-5 input[type="file"],
 .form-style-5 textarea,
 .form-style-5 select {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -85,6 +86,7 @@ $background: rgb(116, 150, 132);
 .form-style-5 input[type="search"]:focus,
 .form-style-5 input[type="time"]:focus,
 .form-style-5 input[type="url"]:focus,
+.form-style-5 input[type="file"]:focus,
 .form-style-5 textarea:focus,
 .form-style-5 select:focus{
 	background: #d2d9dd;
