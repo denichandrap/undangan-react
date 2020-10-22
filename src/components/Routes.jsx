@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Router, Switch, Route } from "react-router-dom";
 import Splash from "../pages/splash/splash";
-import App from "../App";
 import history from "./history";
 import Main from "../pages/main/main";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -23,7 +22,6 @@ export default class Routes extends Component {
                   <Switch location={location}>
                     <Route exact path="/undangan-react/" component={Splash} />
                     <Route exact path="/undangan-react/Main" component={Main} />
-                    <Route exact path="/undangan-react/App" component={App} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

@@ -19,6 +19,7 @@ class Wishes extends React.Component {
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleMsgChange = this.handleMsgChange.bind(this);
   }
+  // alert = useAlert();
  
   handleInputChange(event) {
     this.setState({
@@ -70,8 +71,6 @@ class Wishes extends React.Component {
         setTimeout(() => {
           this.setState({ uploadPercentage: 0 });
           window.location.reload();
-    //       this.setState({ media: [], loading: false, page: 0, prevY: 0, length: 0 });
-    // this.pertama();
         }, 1000);
  
 
@@ -86,13 +85,15 @@ class Wishes extends React.Component {
     //     console.warn(res);
     // })
   }
+  
   render() {
+    
     const { uploadPercentage } = this.state;
     return (
       <React.Fragment>
         <div class="wishes">
           {/* </form> */}
-          <h1>Send Wishes</h1>
+          <h1 className='timeline'>Send Wishes</h1>
           <div class="form-style-5">
             {/* <form> */}
             <fieldset>
