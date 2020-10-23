@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb4efe3065e8de76fbdfc9bf04c22ae6",
+    "revision": "06bbe94c38a9936ec3923d017d9fbfee",
     "url": "/undangan-react/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/undangan-react/static/css/2.e5d0dddf.chunk.css"
   },
   {
-    "revision": "d4d963928168ef8cab78",
-    "url": "/undangan-react/static/css/main.a5dd6407.chunk.css"
+    "revision": "eb75045cbe27cd330542",
+    "url": "/undangan-react/static/css/main.0da57c9d.chunk.css"
   },
   {
     "revision": "ad976831e46a578ea8d7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/undangan-react/static/js/2.6814fc77.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d4d963928168ef8cab78",
-    "url": "/undangan-react/static/js/main.aea4cfb2.chunk.js"
+    "revision": "eb75045cbe27cd330542",
+    "url": "/undangan-react/static/js/main.8ce6b9c2.chunk.js"
   },
   {
     "revision": "5bc6f84bc2edea8eae8b",

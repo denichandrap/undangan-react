@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/undangan-react/static/css/main.a5dd6407.chunk.css",
-    "main.js": "/undangan-react/static/js/main.aea4cfb2.chunk.js",
-    "main.js.map": "/undangan-react/static/js/main.aea4cfb2.chunk.js.map",
+    "main.css": "/undangan-react/static/css/main.0da57c9d.chunk.css",
+    "main.js": "/undangan-react/static/js/main.8ce6b9c2.chunk.js",
+    "main.js.map": "/undangan-react/static/js/main.8ce6b9c2.chunk.js.map",
     "runtime-main.js": "/undangan-react/static/js/runtime-main.4f05fc04.js",
     "runtime-main.js.map": "/undangan-react/static/js/runtime-main.4f05fc04.js.map",
     "static/css/2.e5d0dddf.chunk.css": "/undangan-react/static/css/2.e5d0dddf.chunk.css",
     "static/js/2.6814fc77.chunk.js": "/undangan-react/static/js/2.6814fc77.chunk.js",
     "static/js/2.6814fc77.chunk.js.map": "/undangan-react/static/js/2.6814fc77.chunk.js.map",
     "index.html": "/undangan-react/index.html",
-    "precache-manifest.1ad0207f0fbd0936b3be65f1a13439e4.js": "/undangan-react/precache-manifest.1ad0207f0fbd0936b3be65f1a13439e4.js",
+    "precache-manifest.3699fca8cb515957c94b97b24187312a.js": "/undangan-react/precache-manifest.3699fca8cb515957c94b97b24187312a.js",
     "service-worker.js": "/undangan-react/service-worker.js",
     "static/css/2.e5d0dddf.chunk.css.map": "/undangan-react/static/css/2.e5d0dddf.chunk.css.map",
-    "static/css/main.a5dd6407.chunk.css.map": "/undangan-react/static/css/main.a5dd6407.chunk.css.map",
+    "static/css/main.0da57c9d.chunk.css.map": "/undangan-react/static/css/main.0da57c9d.chunk.css.map",
     "static/js/2.6814fc77.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.6814fc77.chunk.js.LICENSE.txt",
     "static/media/location.scss": "/undangan-react/static/media/2an.8fedcc3b.png",
     "static/media/index.css": "/undangan-react/static/media/SweetsDelight.8198e978.otf",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.4f05fc04.js",
     "static/css/2.e5d0dddf.chunk.css",
     "static/js/2.6814fc77.chunk.js",
-    "static/css/main.a5dd6407.chunk.css",
-    "static/js/main.aea4cfb2.chunk.js"
+    "static/css/main.0da57c9d.chunk.css",
+    "static/js/main.8ce6b9c2.chunk.js"
   ]
 }
