@@ -7,44 +7,55 @@ import "react-vertical-timeline-component/style.min.css";
 import "./timeline.scss";
 import ModalImage from "react-modal-image";
 import axios from "axios";
-import { Player} from "video-react";
+import { Player } from "video-react";
 
 class Timeline extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             media: [],
             loading: false,
             page: 0,
             prevY: 0,
             length: 0,
+            reload:false,
         };
     }
     componentWillUnmount() {
-      //  console.log('unmount');
+        //  console.log('unmount');
     }
     componentDidMount() {
-        // this.getData(this.state.page);
+        this.handleData();
+    }
+    componentDidUpdate(prevProps) {
+        // Typical usage (don't forget to compare props):
+        // if (this.props.reload !== prevProps.reload) {
+            console.log('ada perubahan');
+            if(this.state.media.length!==prevProps.media.length){
+                console.log('ada 123');
+            this.handleData();
+        }
+      }
 
+    handleData ()  {
+        // this.getData(this.state.page);
         var options = {
             root: null,
             rootMargin: "0px",
             threshold: 1.0,
         };
 
-
-
         this.observer = new IntersectionObserver(
             this.handleObserver.bind(this),
             options
         );
         this.observer.observe(this.loadingRef);
-       // console.log(this.loadingRef);
+        // console.log(this.loadingRef);
     }
 
     handleObserver(entities, observer) {
         const y = entities[0].boundingClientRect.y;
-      //  console.log(y);
+        //  console.log(y);
 
         if (this.state.prevY > y) {
             if (this.state.page === 0) {
@@ -68,7 +79,7 @@ class Timeline extends Component {
         // let url = "http://192.168.100.100/react/getData.php?page=" + page;
         // let url = "http://192.168.11.89/react/getdata.php?page=";
         axios.get(url).then((res) => {
-           // console.log(res);
+            // console.log(res);
             this.setState({ media: [...this.state.media, ...res.data] });
             this.setState({ loading: false });
         });
@@ -80,6 +91,7 @@ class Timeline extends Component {
             margin: "30px",
         };
         const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
+
         return (
             <React.Fragment>
                 <br />
@@ -87,38 +99,38 @@ class Timeline extends Component {
                 <VerticalTimeline>
                     {this.state.media.map((result) => (
 
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                                contentArrowStyle={{
-                                    borderRight: "7px solid  rgb(33, 150, 243)",
-                                }}
-                                date={result.date}
-                                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                            // icon={<WorkIcon />}
-                            >
-                                <h3 className="vertical-timeline-element-title timeline-judul">{result.name}</h3>
-                                <br />
-                                { //result.upload.toString().endsWith("mp4")
-                                    result.ext === "mp4"
-                                        ? (
-                                            <Player
-                                                playsInline
-                                                poster={result.upload}
-                                                src={result.upload}
-                                            />
-                                        ) :
-                                        (
-                                            <ModalImage
-                                                small={result.upload}
-                                                large={result.upload}
-                                            // alt=`From ${result.name} message : ${result.msg}`
-                                            />
-                                        )
-                                } 
-                                <p className="pesan">{result.msg}</p>
-                            </VerticalTimelineElement>
-                        ))}
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                            contentArrowStyle={{
+                                borderRight: "7px solid  rgb(33, 150, 243)",
+                            }}
+                            date={result.date}
+                            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                        // icon={<WorkIcon />}
+                        >
+                            <h3 className="vertical-timeline-element-title timeline-judul">{result.name}</h3>
+                            <br />
+                            { //result.upload.toString().endsWith("mp4")
+                                result.ext === "mp4"
+                                    ? (
+                                        <Player
+                                            playsInline
+                                            poster={result.upload}
+                                            src={result.upload}
+                                        />
+                                    ) :
+                                    (
+                                        <ModalImage
+                                            small={result.upload}
+                                            large={result.upload}
+                                        // alt=`From ${result.name} message : ${result.msg}`
+                                        />
+                                    )
+                            }
+                            <p className="pesan">{result.msg}</p>
+                        </VerticalTimelineElement>
+                    ))}
                     <div
                         ref={(loadingRef) => (this.loadingRef = loadingRef)}
                         style={loadingCSS}
@@ -135,10 +147,12 @@ class Timeline extends Component {
                     />
                 </VerticalTimeline>
 
-                <br/>
+                <br />
             </React.Fragment>
         );
     }
 }
+
+
 
 export default Timeline;

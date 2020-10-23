@@ -8,7 +8,7 @@ import Routes from './components/Routes';
 
 
 ReactDOM.render(
-  <Router>
+  <Router basename="/">
     <div className="App">
       {/* <Navigation /> */}
       <Routes />
