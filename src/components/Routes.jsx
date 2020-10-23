@@ -20,8 +20,8 @@ export default class Routes extends Component {
                   key={location.key}
                 >
                   <Switch location={location}>
-                    <Route exact path="/" component={Splash} />
-                    <Route exact path="/Main" component={Main} />
+                    {/* <Route exact path="/" component={Splash} /> */}
+                    <Route exact path="/" component={Main} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

@@ -101,8 +101,8 @@ class Wishes extends Component {
 
   getData(page) {
     this.setState({ loading: true });
-    let url =
-      "https://react-undagan.skypieateknik.co.id/getdata.php?page=" + page;
+    let url = "https://api.invitation-gd.info/getdata.php?page=" + page;
+    // let url = "https://react-undagan.skypieateknik.co.id/getdata.php?page=" + page;
     // let url = "http://192.168.100.100/react/getData.php?page=" + page;
     // let url = "http://192.168.11.89/react/getdata.php?page=";
     axios.get(url).then((res) => {
@@ -137,7 +137,8 @@ class Wishes extends Component {
       },
     };
 
-    let url = "https://react-undagan.skypieateknik.co.id/upload.php";
+    let url ='https://api.invitation-gd.info/upload.php';  
+   // let url = "https://react-undagan.invitation-gd.info/upload.php";
     // let url = "http://192.168.100.100/react/upload.php";
     // let url = "http://192.168.11.89/react/upload.php";
     //TODO: pengunaan option pada sebelumnya gagal upload

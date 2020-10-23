@@ -8,7 +8,7 @@ import Routes from './components/Routes';
 
 
 ReactDOM.render(
-  <Router basename="/undangan-react">
+  <Router basename="/">
     <div className="App">
       {/* <Navigation /> */}
       <Routes />

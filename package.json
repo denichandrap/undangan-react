@@ -2,7 +2,7 @@
   "name": "undagan-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://denichandrap.github.io/undangan-react",
+  "homepage": ".",
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@fortawesome/fontawesome-free": "^5.15.1",
