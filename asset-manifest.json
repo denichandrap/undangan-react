@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/undangan-react/static/css/main.5b665f07.chunk.css",
+    "main.css": "/undangan-react/static/css/main.a5dd6407.chunk.css",
     "main.js": "/undangan-react/static/js/main.aea4cfb2.chunk.js",
     "main.js.map": "/undangan-react/static/js/main.aea4cfb2.chunk.js.map",
     "runtime-main.js": "/undangan-react/static/js/runtime-main.4f05fc04.js",
@@ -9,10 +9,10 @@
     "static/js/2.6814fc77.chunk.js": "/undangan-react/static/js/2.6814fc77.chunk.js",
     "static/js/2.6814fc77.chunk.js.map": "/undangan-react/static/js/2.6814fc77.chunk.js.map",
     "index.html": "/undangan-react/index.html",
-    "precache-manifest.d508302fb342970a4702951262407e42.js": "/undangan-react/precache-manifest.d508302fb342970a4702951262407e42.js",
+    "precache-manifest.1ad0207f0fbd0936b3be65f1a13439e4.js": "/undangan-react/precache-manifest.1ad0207f0fbd0936b3be65f1a13439e4.js",
     "service-worker.js": "/undangan-react/service-worker.js",
     "static/css/2.e5d0dddf.chunk.css.map": "/undangan-react/static/css/2.e5d0dddf.chunk.css.map",
-    "static/css/main.5b665f07.chunk.css.map": "/undangan-react/static/css/main.5b665f07.chunk.css.map",
+    "static/css/main.a5dd6407.chunk.css.map": "/undangan-react/static/css/main.a5dd6407.chunk.css.map",
     "static/js/2.6814fc77.chunk.js.LICENSE.txt": "/undangan-react/static/js/2.6814fc77.chunk.js.LICENSE.txt",
     "static/media/location.scss": "/undangan-react/static/media/2an.8fedcc3b.png",
     "static/media/index.css": "/undangan-react/static/media/SweetsDelight.8198e978.otf",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.4f05fc04.js",
     "static/css/2.e5d0dddf.chunk.css",
     "static/js/2.6814fc77.chunk.js",
-    "static/css/main.5b665f07.chunk.css",
+    "static/css/main.a5dd6407.chunk.css",
     "static/js/main.aea4cfb2.chunk.js"
   ]
 }
